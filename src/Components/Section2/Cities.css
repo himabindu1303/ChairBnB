@@ -1,0 +1,40 @@
+.CitiesContainer {
+    padding: 20px;
+}
+.AllCities {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.City {
+    background-color: rgb(255, 214, 220);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.City a {
+    text-decoration: none;
+    color: black;
+}
+.City:hover {
+    background-color: rgb(114, 249, 114);
+}
+@media (max-width: 1024px) {
+    .AllCities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .AllCities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .AllCities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

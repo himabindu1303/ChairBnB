@@ -1,0 +1,27 @@
+.Container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.Container1-text {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+}
+.Container-img {
+    width: 50%;
+}
+.Container-img img {
+    width: 100%;
+    height: auto;
+}
+.Container2{
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 20px;
+    text-align: justify;
+}
