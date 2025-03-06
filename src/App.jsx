@@ -6,6 +6,7 @@ import Carousels from './Components/Section1/Carousels.jsx'
 import Cities from './Components/Section2/Cities.jsx'
 import Amenities from './Components/Section3/Amenities.jsx'
 import Reviews from './Components/Section4/Reviews.jsx'
+
 import About from './Pages/About.jsx'
 import AndhraPradesh from './Pages/AP.jsx'
 import Hyderabad from "./Pages/Hyd.jsx"
@@ -15,7 +16,9 @@ import Mumbai from "./Pages/Mumbai.jsx"
 import Gurugram from "./Pages/Gurugram.jsx"
 import Pune from "./Pages/Pune.jsx"
 import Delhi from "./Pages/Delhi.jsx"
+
 import BookNow from './Components/BookNowPage/Booknow.jsx'
+import ContactPage from './Pages/ContactPage.jsx'
 
 function App() {
   return (
@@ -42,6 +45,8 @@ function App() {
         <Route path="/gurugram" element={<Gurugram />} />
         <Route path="/pune" element={<Pune />} />
         <Route path="/delhi" element={<Delhi />} />
+
+        <Route path="/contactus" element={<ContactPage />} />
 
         <Route path="/booking" element={<BookNow/>} />
 
