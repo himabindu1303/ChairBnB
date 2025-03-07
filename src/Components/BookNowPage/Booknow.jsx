@@ -16,17 +16,25 @@ function BookNow() {
       const handleInput = (e) => {
         const { name, value } = e.target;
         if (name === "priceType") { 
-            setformData({ ...formData, [name]: value, price: value === "individual" ? individual : MeetingRoom });
-        }else { 
-            setformData({ ...formData, [name]: value });
+            setformData({
+                ...formData,
+                priceType: value,
+                price: value === "individual" ? individual : MeetingRoom,
+            });
+        } else { 
+            setformData({
+                ...formData,
+                [name]: value,
+            });
         }
-      };
+    };
     
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted:", formData);
-        alert("Your booking is confirmed! You will receive an email shortly.")
-      };
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        console.log("Submitted Data:", formData);
+        alert("Booking confirmed! You will receive an email shortly.");
+    };
+    
 
     return (
         <>
@@ -34,11 +42,9 @@ function BookNow() {
                 <h3>Enter your details here</h3>
 
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name here" onChange={handleInput} />
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required onChange={handleInput} />
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email here" onChange={handleInput} />
-                {/* <label htmlFor="phno">Phno</label>
-                <input type="tel" id="phno" name="phno" placeholder="Enter your phno here" onChange={handleInput} /> */}
+                <input type="email" id="email" name="email" placeholder="Enter your email here" required onChange={handleInput} />
 
                 <label>Select Price</label>
                 <select name="priceType" onChange={handleInput} value={formData.priceType}>
