@@ -5,7 +5,7 @@ const WorkspaceCards = ({ image, location, address, individual, MeetingRoom }) =
   const navigate = useNavigate()
 
   const handleBook = () => {
-    navigate("/booking",{ state: { individual, MeetingRoom }})    // send price details  
+    navigate("/booking", { state: { individual, MeetingRoom, location, address }} )    // send price details  
   }
 
   return (

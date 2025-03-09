@@ -4,7 +4,8 @@ import "./Booknow.css"
 
 function BookNow() {
     const location = useLocation();
-    const { individual, MeetingRoom } = location.state || { individual: 500, MeetingRoom: 800 }; 
+    const { individual, MeetingRoom, location:workspacelocation, address} = location.state || { individual: 500, MeetingRoom: 800, 
+                                                                             workspacelocation:"unknown" , address:"unknown" }; 
 
     const [formData, setformData] = useState({
         name: "",
@@ -45,6 +46,9 @@ function BookNow() {
                 <input type="text" id="name" name="name" placeholder="Enter your name here" required onChange={handleInput} />
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email here" required onChange={handleInput} />
+
+                <p style={{marginTop:"20px"}}><strong>Location:</strong> {workspacelocation}</p>
+                <p><strong>Address:</strong> {address}</p>
 
                 <label>Select Price</label>
                 <select name="priceType" onChange={handleInput} value={formData.priceType}>
