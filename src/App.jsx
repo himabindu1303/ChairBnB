@@ -19,6 +19,7 @@ import Delhi from "./Pages/Delhi.jsx"
 
 import BookNow from './Components/BookNowPage/Booknow.jsx'
 import ContactPage from './Pages/ContactPage.jsx'
+import SignUp from './Pages/SignUp.jsx'
 
 function App() {
   return (
@@ -49,6 +50,10 @@ function App() {
         <Route path="/contactus" element={<ContactPage />} />
 
         <Route path="/booking" element={<BookNow/>} />
+
+        <Route path="/signup" element={<SignUp/>} />
+        <Route path="/signin" element={<SignIn/>} />
+
 
       </Routes>
 
