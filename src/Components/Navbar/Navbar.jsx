@@ -23,14 +23,14 @@ function Navbar() {
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">Locations</a>
                                 <ul className="dropdown-menu">
-                                    <li> <Link className=" dropdown-item" to="/andhraPradesh">Andhra Pradesh</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/hyderabad">Hyderabad</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/banglore">Banglore</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/chennai">Chennai</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/mumbai">Mumbai</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/gurugram">Gurugram</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/pune">Pune</Link> </li>
-                                    <li> <Link className=" dropdown-item" to="/delhi">Delhi</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/andhraPradesh">Andhra Pradesh</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/hyderabad">Hyderabad</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/banglore">Banglore</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/chennai">Chennai</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/mumbai">Mumbai</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/gurugram">Gurugram</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/pune">Pune</Link> </li>
+                                    <li> <Link className=" dropdown-item" to="/locations/delhi">Delhi</Link> </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
@@ -39,16 +39,18 @@ function Navbar() {
                             <li className="nav-item">
                             <Link className=" nav-link" to="/contactus">Contact Us</Link>
                             </li>
-                            <li className="nav-item">
-                            <Link className=" nav-link" to="/signup">Sign Up</Link>
-                            </li>
-                            <li className="nav-item">
-                            <Link className=" nav-link" to="/signin">Sign In</Link>
-                            </li>
                             
-                            {/* <li className="nav-item admin">
-                                <a className="nav-link" href="#">Logout</a>
-                            </li> */}
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Login</a>
+                                <ul className="dropdown-menu">
+                                    <li><Link to="/signup" className=" dropdown-item">Sign Up</Link></li>
+                                    <li><Link to="/login" className=" dropdown-item">Login</Link></li>
+                                </ul>
+                            </li>
+                            <li className="nav-item">
+                                <Link className=" nav-link" to="/logout">Logout</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

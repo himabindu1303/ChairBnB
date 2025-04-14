@@ -1,9 +1,21 @@
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useLocation,useNavigate } from "react-router-dom";
+import { useState,useEffect } from "react";
 import "./Booknow.css"
 
 function BookNow() {
     const location = useLocation();
+    const navigate = useNavigate();
+
+     const user = JSON.parse(localStorage.getItem("users"));            // Get logged-in user from localStorage
+
+     useEffect(() => {                                   // Redirect to sign-up if user is not logged in
+        // const user = JSON.parse(localStorage.getItem("users")); 
+         if (!user) {
+             alert("Please sign in first to continue booking.");
+             navigate("/signup");                          // Redirect to sign-up page if not logged in
+         }
+     }, [navigate]);
+
     const { individual, MeetingRoom, location:workspacelocation, address} = location.state || { individual: 500, MeetingRoom: 800, 
                                                                              workspacelocation:"unknown" , address:"unknown" }; 
 

@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     padding: 20px;
 }
@@ -20,7 +20,7 @@
     height: auto;
 }
 .Container2{
-    max-width: 1200px; 
+    max-width: 1400px; 
     margin: 40px auto; 
     padding: 20px;
     text-align: justify;

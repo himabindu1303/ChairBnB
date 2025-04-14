@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom"
 import "./SignUp.css"
 
 function SignUp() {
+    const navigate = useNavigate()
     const [SignUpdata, setSignUpdata] = useState({
         name: "",
         email: "",
@@ -58,6 +59,7 @@ function SignUp() {
         localStorage.setItem("users", JSON.stringify(existingUsers));
 
         alert("Account created successfully!");
+        // navigate("/")
         setSignUpdata({
             name: "",
             email: "",
@@ -65,7 +67,7 @@ function SignUp() {
             confirmpassword: ""
         });
 
-        navigate("/signin"); 
+        navigate("/login"); 
 
     }
     return (
@@ -82,7 +84,7 @@ function SignUp() {
                 <label htmlFor="confirmpassword">Confirm Password:</label>
                 <input type="password" value={SignUpdata.confirmpassword} name="confirmpassword" onChange={handleInput} />
 
-                <p className="signinpage">Already have an account? <Link to="signin">Sign In here</Link></p>
+                <p className="signinpage">Already have an account? <Link to="/signin">Sign In here</Link></p>
 
                 <input type="submit" value="Create an Account" className="submit"/>
             </form>

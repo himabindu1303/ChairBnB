@@ -15,24 +15,24 @@ function Footer() {
                     <div className="footer-div">
                         <h6>About ChairBnB</h6>
                         <ul>
-                            <li><a href="#">About </a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><Link  to="/about">About</Link></li>
+                            <li><Link  to="/contactus">Contact Us</Link></li>
+                            <li><Link  to="/about">Blog</Link></li>
+                            <li><Link  to="/privacy&Terms">Privacy Policy</Link></li>
+                            <li><Link  to="/privacy&Terms">Terms and Conditions</Link></li>
                         </ul>
                     </div>
                     <div className="footer-div">
                         <h6>Locations</h6>
                         <ul>
-                            <li> <Link  to="/andhraPradesh">Andhra Pradesh</Link> </li>
-                            <li> <Link  to="/hyderabad">Hyderabad</Link> </li>
-                            <li> <Link  to="/banglore">Banglore</Link> </li>
-                            <li> <Link  to="/chennai">Chennai</Link> </li>
-                            <li> <Link  to="/mumbai">Mumbai</Link> </li>
-                            <li> <Link  to="/gurugram">Gurugram</Link> </li>
-                            <li> <Link  to="/pune">Pune</Link> </li>
-                            <li> <Link  to="/delhi">Delhi</Link> </li>
+                            <li> <Link  to="/locations/andhraPradesh">Andhra Pradesh</Link> </li>
+                            <li> <Link  to="/locations/hyderabad">Hyderabad</Link> </li>
+                            <li> <Link  to="/locations/banglore">Banglore</Link> </li>
+                            <li> <Link  to="/locations/chennai">Chennai</Link> </li>
+                            <li> <Link  to="/locations/mumbai">Mumbai</Link> </li>
+                            <li> <Link  to="/locations/gurugram">Gurugram</Link> </li>
+                            <li> <Link  to="/locations/pune">Pune</Link> </li>
+                            <li> <Link  to="/locations/delhi">Delhi</Link> </li>
 
                         </ul>
                     </div>
